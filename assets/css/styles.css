@@ -561,7 +561,16 @@
   .product__card:hover .product__img{
     transform: translateY(-.5rem);
   }
-  
+  .product__img {
+    border-radius: 16px;
+  }
+  .about__img1 {
+    width: 280px;
+    justify-self: center;
+    align-items: center;
+    border-radius: 16px;
+    margin-top: 2em;
+  }
   /*=============== QUESTIONS ===============*/
   .questions{
     background-color: var(--first-color-lighten);
