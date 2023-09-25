@@ -573,6 +573,83 @@
     border-radius: 16px;
     margin-top: 2em;
   }
+
+  .gallery {
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+  }
+  .gallery div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+  }
+  .gallery div img {
+    width: 100%;
+    transition: transform 0.5s;
+  }
+  .gallery::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .gallery-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+  }
+  #backBtn, #nextBtn {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+  }
+
+  .gallery div img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .gallery1 {
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+  }
+  .gallery1 div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+  }
+  .gallery1 div img {
+    width: 100%;
+    transition: transform 0.5s;
+  }
+  .gallery1::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .gallery-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+  }
+  #backbtn, #nextbtn {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+  }
+
+  .gallery1 div img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
   /*=============== QUESTIONS ===============*/
   .questions{
     background-color: var(--first-color-lighten);
@@ -904,6 +981,50 @@
       grid-template-columns: .6fr;
       justify-content: center;
     }
+    .gallery div img {
+      width: 180px;
+      transition: transform 0.5s;
+    }
+    .gallery::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .gallery-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10%;
+    }
+    #backBtn, #nextBtn {
+      width: 12px;
+      cursor: pointer;
+      margin: 10px;
+    }
+  
+    .gallery div img:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+    .gallery1 div img {
+      width: 180px;
+      transition: transform 0.5s;
+    }
+    #backbtn, #nextbtn {
+      width: 12px;
+      cursor: pointer;
+      margin: 10px;
+    }
+  
+    .gallery1 div img:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+    .nav__logo img {
+      width: 100px;
+      height: 100px;
+      font-size: 1.5em;
+      color: var(--icon-color);
+    }
   }
   
   /* For medium devices */
@@ -923,6 +1044,34 @@
   
     .footer__subscribe{
       width: 400px;
+    }
+    .gallery div img {
+      width: 280px;
+      transition: transform 0.5s;
+    }
+    #backBtn, #nextBtn {
+      width: 22px;
+      cursor: pointer;
+      margin: 25px;
+    }
+  
+    .gallery div img:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+    .gallery1 div img {
+      width: 280px;
+      transition: transform 0.5s;
+    }
+    #backbtn, #nextbtn {
+      width: 22px;
+      cursor: pointer;
+      margin: 25px;
+    }
+  
+    .gallery1 div img:hover {
+      cursor: pointer;
+      transform: scale(1.1);
     }
   }
   
@@ -978,6 +1127,34 @@
     }
     .footer__subscribe{
       width: initial;
+    }
+    .gallery div img {
+      width: 320px;
+      transition: transform 0.5s;
+    }
+    #backBtn, #nextBtn {
+      width: 32px;
+      cursor: pointer;
+      margin: 25px;
+    }
+  
+    .gallery div img:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+    .gallery1 div img {
+      width: 320px;
+      transition: transform 0.5s;
+    }
+    #backbtn, #nextbtn {
+      width: 32px;
+      cursor: pointer;
+      margin: 25px;
+    }
+  
+    .gallery1 div img:hover {
+      cursor: pointer;
+      transform: scale(1.1);
     }
   }
   
@@ -1064,6 +1241,34 @@
     }
     .footer__copy{
       margin: 7rem 0 2rem;
+    }
+    .gallery div img {
+      width: 450px;
+      transition: transform 0.5s;
+    }
+    #backBtn, #nextBtn {
+      width: 40px;
+      cursor: pointer;
+      margin: 18px;
+    }
+  
+    .gallery div img:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+    .gallery1 div img {
+      width: 450px;
+      transition: transform 0.5s;
+    }
+    #backbtn, #nextbtn {
+      width: 40px;
+      cursor: pointer;
+      margin: 18px;
+    }
+  
+    .gallery1 div img:hover {
+      cursor: pointer;
+      transform: scale(1.1);
     }
   }
   
