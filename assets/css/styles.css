@@ -311,8 +311,8 @@
   .home{
     padding: 3.5rem 0 2rem;
     /* background: url(assets/img/20231005_071118.jpg); */
-    background-position: center;
-    background-size: cover;
+    /* background-position: center;
+    background-size: cover; */
     background-color: transparent;
   }
   
