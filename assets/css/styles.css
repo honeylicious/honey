@@ -349,6 +349,7 @@
   
   .home__description{
     margin-bottom: var(--mb-2-5);
+    color: black;
   }
   
   .home__social{
@@ -610,7 +611,7 @@ h3 {
     transform: translateY(-.25rem);
   }
   
-  /*=============== PRODUCTS ===============*/
+  /*=============== SHOP ===============*/
   .product__description{
     text-align: center;
   }
@@ -682,6 +683,7 @@ h3 {
     align-items: center;
     border-radius: 16px;
     margin-top: 2em;
+    background-size: cover;
   }
 
   .gallery {
@@ -760,7 +762,11 @@ h3 {
     transform: scale(1.1);
   }
 
-
+  .testimonial img {
+    width: 100%;
+    height: 20%;
+    border-radius: 16px
+}
 
 
   /*=============== QUESTIONS ===============*/
@@ -1315,6 +1321,12 @@ h3 {
       color: var(--icon-color);
     } */
     /* .footer__logo img {
+      width: 80px;
+      height: 80px;
+      font-size: 1.5em;
+      color: var(--icon-color);
+    } */
+    /* .nav__logo img {
       width: 80px;
       height: 80px;
       font-size: 1.5em;
