@@ -767,7 +767,14 @@ h3 {
     height: 20%;
     border-radius: 16px
 }
-
+.purchase-button {
+  background-color: #FFD700;
+  border: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+  padding: 1rem 3rem 1rem 3rem;
+  color: white;
+}
 
   /*=============== QUESTIONS ===============*/
   .questions{
