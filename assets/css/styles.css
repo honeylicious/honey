@@ -309,7 +309,7 @@
   
   /*=============== HOME ===============*/
   .home{
-    padding: 3.5rem 0 2rem;
+    padding: 3.5rem 0 3rem;
     /* background: url(assets/img/20231005_071118.jpg); */
     /* background-position: center;
     background-size: cover; */
@@ -772,6 +772,7 @@ h3 {
   /*=============== QUESTIONS ===============*/
   .questions{
     background-color: var(--first-color-lighten);
+    background-image: url(assets/img20230821_164922.jpg/);
   }
   
   .questions__container{
@@ -1265,9 +1266,35 @@ h3 {
       font-size: 1.5em;
       color: var(--icon-color);
     }
-    
+    .home{
+      padding: 3.5rem 0 3rem;
+      /* background: url(assets/img/20231005_071118.jpg); */
+      /* background-position: center;
+      background-size: cover; */
+      background-color: transparent;
+    }
   }
-  
+  @media screen and (max-width: 500px){
+    .nav__logo img {
+      width: 80px;
+      height: 80px;
+      font-size: 1.5em;
+      color: var(--icon-color);
+    }
+    .footer__logo img {
+      width: 80px;
+      height: 80px;
+      font-size: 1.5em;
+      color: var(--icon-color);
+    }
+    .home{
+      padding: 3.5rem 0 10rem;
+      /* background: url(assets/img/20231005_071118.jpg); */
+      /* background-position: center;
+      background-size: cover; */
+      background-color: transparent;
+    }
+  }
   /* For medium devices */
   @media screen and (min-width: 576px){
     .steps__container{
