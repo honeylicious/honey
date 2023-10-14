@@ -150,6 +150,8 @@ let options = {
 
 let observer = new IntersectionObserver(callback, options);
 
+document.addEventListener("scroll", lazyload);
+
 /*=============== SHOW SCROLL UP ===============*/
 // const contactForm = document.querySelector("#contact-form")
 // const submitBtn = document.querySelector("#button")

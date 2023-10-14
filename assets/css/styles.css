@@ -1295,7 +1295,7 @@ h3 {
       color: var(--icon-color);
     }
     .home{
-      padding: 3.5rem 0 10rem;
+      padding: 3.5rem 0 13rem;
       /* background: url(assets/img/20231005_071118.jpg); */
       /* background-position: center;
       background-size: cover; */
@@ -1360,6 +1360,13 @@ h3 {
       font-size: 1.5em;
       color: var(--icon-color);
     } */
+    .home{
+      padding: 3.5rem 0 16rem;
+      /* background: url(assets/img/20231005_071118.jpg); */
+      /* background-position: center;
+      background-size: cover; */
+      background-color: transparent;
+    }
   }
   
   @media screen and (min-width: 767px){
