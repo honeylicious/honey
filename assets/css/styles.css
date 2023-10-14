@@ -1360,12 +1360,6 @@ h3 {
       font-size: 1.5em;
       color: var(--icon-color);
     } */
-    /* .nav__logo img {
-      width: 80px;
-      height: 80px;
-      font-size: 1.5em;
-      color: var(--icon-color);
-    } */
   }
   
   @media screen and (min-width: 767px){

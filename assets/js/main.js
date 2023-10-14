@@ -85,15 +85,15 @@ function scrollActive(){
         }
     })
 }
-window.addEventListener('scroll', scrollActive)
+window.addEventListener('scroll', scrollActive, lazyload)
 
 /*=============== SHOW SCROLL UP ===============*/ 
 function scrollUp(){
-    const scrollUp = document.getElementById('scroll-up');
+    const scrollUp = document.getElementById('scroll-up', lazyload);
     // When the scroll is higher than 400 viewport height, add the show-scroll class to the a tag with the scroll-top class
     if(this.scrollY >= 400) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
 }
-window.addEventListener('scroll', scrollUp)
+window.addEventListener('scroll', scrollUp, lazyload)
 
 /*=============== DARK LIGHT THEME ===============*/ 
 const themeButton = document.getElementById('theme-button')
@@ -140,6 +140,15 @@ sr.reveal(`.home__social`, {delay: 600})
 sr.reveal(`.about__img, .contact__box`,{origin: 'left'})
 sr.reveal(`.about__data, .contact__form`,{origin: 'right'})
 sr.reveal(`.steps__card, .product__card, .questions__group, .footer`,{interval: 100})
+
+/*=============== INTERSECTION OBSERVER TO LOAD WEBSITE FASTER ===============*/
+let options = {
+    root: document.querySelectorAll('section[id]'),
+    rootMargin: '0px',
+    threshold: 1.0,
+};
+
+let observer = new IntersectionObserver(callback, options);
 
 /*=============== SHOW SCROLL UP ===============*/
 // const contactForm = document.querySelector("#contact-form")
