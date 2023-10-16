@@ -142,15 +142,34 @@ sr.reveal(`.about__data, .contact__form`,{origin: 'right'})
 sr.reveal(`.steps__card, .product__card, .questions__group, .footer`,{interval: 100})
 
 /*=============== INTERSECTION OBSERVER TO LOAD WEBSITE FASTER ===============*/
-let options = {
-    root: document.querySelectorAll('section[id]'),
-    rootMargin: '0px',
-    threshold: 1.0,
-};
+// let options = {
+//     root: document.querySelectorAll('section[id]'),
+//     rootMargin: '0px',
+//     threshold: 1.0,
+// };
 
-let observer = new IntersectionObserver(callback, options);
+// let observer = new IntersectionObserver(callback, options);
 
-document.addEventListener("scroll", lazyload);
+// document.addEventListener("scroll", lazyload);
+
+const images = document.querySelectorAll('section[id]');
+
+let imageOptions = {};
+
+let observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const image = entry.target;
+        observer.unobserve(image);
+    }) 
+}, imageOptions);
+
+images.forEach((image) => {
+    observer.observe(image)
+})
+
+
+
 
 /*=============== SHOW SCROLL UP ===============*/
 // const contactForm = document.querySelector("#contact-form")
