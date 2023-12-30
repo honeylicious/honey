@@ -274,3 +274,44 @@ images.forEach((image) => {
 //             alert('Thank you, ' + params['senderemail'] + '! Your message has been sent.')
 //         })
 //         .catch();
+
+
+
+// Get all the images and videos on the page
+const imager = document.querySelectorAll('img[data-src]');
+const videos = document.querySelectorAll('video[data-src]');
+
+// Intersection Observer to check if the image or video is visible in the viewport
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.1
+};
+
+const observe = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Load the media content
+      if (entry.target.tagName === 'IMG') {
+        entry.target.src = entry.target.dataset.src;
+      } else if (entry.target.tagName === 'VIDEO') {
+        entry.target.src = entry.target.dataset.src;
+        entry.target.load();
+      }
+
+      // Stop observing the element
+      observe.unobserve(entry.target);
+    }
+  });
+}, options);
+
+// Observe each image and video
+imager.forEach(image => {
+  observer.observe(image);
+});
+
+videos.forEach(video => {
+  observer.observe(video);
+});
+
+
