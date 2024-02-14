@@ -1,1008 +1,551 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/HONEYL1 (1).png" type="image/x-icon">
-
-        <!--=============== REMIX ICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <!--=============== EMAILJS CDN ===============-->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-        <title>Honeylicious</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                     <img src="assets/img/HONEYL1.png" loading="lazy" alt=""> 
-                </a>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">About Us</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#shop" class="nav__link">Shop</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#faqs" class="nav__link">FAQs</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">Contact Us</a>
-                        </li>
-                    </ul>
-
-                    <div class="nav__close" id="nav-close">
-                        <i class="ri-close-line"></i>
-                    </div>
-                </div>
-
-                <div class="nav__btns">
-                    <!-- Theme change button -->
-                    <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
-
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="ri-menu-line"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home" id="home" style= "background: url(assets/img/20231005_071118\ \(1\).jpg); background-position: center;
-            background-size: cover;" loading="lazy">
-                <div class="home__container container grid">
-                    <!-- <img src="assets/img/20231005_071118.jpg" alt="" loading="lazy" class="home__img"> -->
-
-                    <div class="home__data">
-                        <h1 class="home__title" style="color: white;">
-                            The best organic honey <br> you can have
-                        </h1>
-                        <p class="home__description">
-                            Better bees, better honey, better life 
-                        </p>
-                        <a href="#about" class="button button--flex">
-                            Explore <i class="ri-arrow-right-down-line button__icon"></i>
-                        </a>
-                    </div>
-
-                    <div class="home__social">
-                        <span class="home__social-follow">Follow Us</span>
-
-                        <div class="home__social-links">
-                            <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
-                                <i class="ri-facebook-fill"></i>
-                            </a>
-                            <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
-                                <i class="ri-instagram-line"></i>
-                            </a>
-                            <a href="https://twitter.com/" target="_blank" class="home__social-link">
-                                <i class="ri-twitter-fill"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                
-          </section>
-
-            <!--==================== ABOUT ====================-->
-            <!-- <section class="about section container" id="about">
-                <div class="about__container grid">
-                    <img src="assets/img/pexels-timothy-paule-ii-2749847.jpg" alt="" loading="lazy" class="about__img">
-
-                    <div class="about__data">
-                        <h2 class="section__title about__title">
-                            Our mission
-                        </h2>
-
-                        <p class="about__description">
-                            At honeylicious, we are committed to providing excellent services <br>
-                            to our clients. We believe that we can make a positive impact on our community, <br>
-                            industry and the world.
-                        </p>
-
-                        <div class="about__details">
-                            <p class="about__details-description">
-                                <i class="ri-checkbox-fill about__details-icon"></i>
-                                We always deliver on time.
-                            </p>
-                            <p class="about__details-description">
-                                <i class="ri-checkbox-fill about__details-icon"></i>
-                                We give you guides to protect your honey and care for your honeycomb
-                            </p>
-                            <p class="about__details-description">
-                                <i class="ri-checkbox-fill about__details-icon"></i>
-                                We always come over for a check-up after sale.
-                            </p>
-                            <p class="about__details-description">
-                                <i class="ri-checkbox-fill about__details-icon"></i>
-                                100% money back guaranteed.
-                            </p>
-                        </div>
-
-                        <a href="#" class="button--link button--flex">
-                            visit our farm <i class="ri-arrow-right-down-line button__icon"></i>
-                        </a>
-                    </div>
-                    
-                    
-
-                </div>
-
-                <h2 class="section__title-center">About us</h2>
-                    <p class="product__description">We offer the best honey in the market</p>
-                    <img src="assets/img/20231005_071148.jpg" width="900" height="300" alt="" loading="lazy" class="center">
-                    <h2 class="section__title-center">Our mission</h2>
-                    <p class="product__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem illo dolores quam.</p>
-                    <div class="home__container container grid">
-                        <img src="assets/img/20231005_062102.jpg" alt="" loading="lazy" class="home__img">
-    
-                        <div class="home__data">
-                            <h1 class="home__title">
-                                The best organic honey <br> in the market
-                            </h1>
-                            <p class="home__description">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, id?
-                            </p>
-                            
-                         </div>
-                    </div>
-                    
-            </section> -->
-        <section class="about section container" id="about" style= "background: url(assets/img/20230712_171335.jpg); background-position: center;
-        background-size: cover; margin-top: 5rem; border-radius: 16px;" loading="lazy">
-            <h2 class="section__title-center">About us</h2>
-                    <p class="product__description" style="color: white">We offer a wide range of Bee products, Beekeeping equipment & services</p>
-                    <!-- <img src="assets/img/20231005_071148.jpg" width="900" height="300" alt="" loading="lazy" class="center"> -->
-                    <div class="row">
-                        <div class="box">
-                            <h3>Hive Products</h3>
-                            <ol>
-                                <li>Honey</li>
-                                <li>Beeswax candles</li>
-                                <li>Bee pollen</li>
-                                <li>Bee venom</li>
-                                <li>Royal jelly</li>
-                                <li>Propolis</li>
-                                <li>Honeycomb</li>
-                                <li>Swarm lure</li>
-                                <li>Wax sheets</li>
-                                <li>And many more...</li>
-                            </ol>
-                        </div>
-
-                        <div class="box">
-                            <h3>Services we offer</h3>
-                            <ol>
-                                <li>Pollination services</li>
-                                <li>Hive inspection/maintenance</li>
-                                <li>Hive treatment</li>
-                                <li>Hive installation</li>
-                                <li>Ethical bee removal/bee transfer</li>
-                                <li>Hive colonization</li>
-                                <li>Beekeeping training</li>
-                                <li>Honey harvesting services</li>
-                                <li>And many more...</li>
-                            </ol>
-                        </div>
-
-                        <div class="box">
-                            <h3>Hive equipment</h3>
-                            <ol>
-                                <li>Beehives</li>
-                                <li>Honey extractor</li>
-                                <li>Bee suit</li>
-                                <li>Uncapping fork</li>
-                                <li>Bee brush</li>
-                                <li>Hive tool</li>
-                                <li>Double strainer/sieve</li>
-                                <li>Electric smoker</li>
-                                <li>Manual smoker</li>
-                                <li>Honey gate</li>
-                                <li>Honey refractometer</li>
-                                <li>Swarm catcher</li>
-                                <li>Honey press machine</li>
-                                <li>Brass wire spur wheel embedder</li>
-                                <li>Beekeepers starter kit</li>
-                            </ol>
-                        </div>
-                    </div>
-                    <h3>We provide ready market for our clients' bee products</h3>
-                    <!-- <p>To get a full range of our services and products each out to us at +254731905263 or +254706349748,</p> -->
-                    <h2 class="section__title-center">Our mission</h2>
-                    <p class="product__description" style="color: white">To improve protect the health and wellbeing of bees, people and our planet.</p>
-                    <div class="home__container container grid">
-                        <!-- <img src="assets/img/20231005_062102.jpg" alt="" loading="lazy" class="home__img"> -->
-                     
-                    <!-- <div class="testimonial">
-                        <div class="home__data">
-                            <h1 class="home__title">
-                                The best organic honey <br> in the market
-                            </h1>
-                            <p class="home__description">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, id?
-                            </p>
-                            
-                        </div>
-                    </div> -->
-                </div>
-               
-                 
-                </section>
-            <!--==================== Testimonials ====================-->
-            <div class="testimonials" style= "background: url(assets/img/20230712_171335.jpg); background-position: center;
-            background-size: cover; margin-top: 5rem;">
-                <div class="inner">
-                    <h2>Testimonials</h2>
-                    <p class="product__description" style="color: white;">People love what we do and we want to let you know</p>
-                    <div class="row">
-                        <div class="col">
-                            <div class="testimonial">
-                                <h3>Very good honey ! I use it in almost everything.
-                                </h3>
-                                <div class="stars">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bx-star'></i>
-                                    <i class='bx bx-star'></i>
-                                    <i class='bx bx-star'></i>
-                                </div>
-                                <div class="name">Full name</div>
-                                <p>CEO</p>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="testimonial">
-                                <h3>This is raw un processed , non heated above room temperature.
-                                </h3>
-                                <div class="stars">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bx-star'></i>
-                                    <i class='bx bx-star'></i>
-                                </div>
-                                <div class="name">Full name</div>
-                                <p>CEO</p>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="testimonial">
-                                <h3>I really enjoy this honey. its nice and thick and if you want, you can pour it from the jar.
-                                </h3>
-                                <div class="stars">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bx-star'></i>
-                                </div>
-                                <div class="name">Full name</div>
-                                <p>CEO</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- <div class="home__container container grid">
-                <img src="assets/img/20230810_162639.jpg" alt="" loading="lazy" class="home__img">
-             
-            <div class="testimonial">
-                <div class="home__data">
-                    <h1 class="home__title">
-                        The best organic honey <br> in the market
-                    </h1> -->
-                    <!-- <p class="home__description">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, id?
-                    </p> -->
-                    
-                <!-- </div>
-            </div>
-        </div> -->
-
-        <!-- <div class="container1">
-            <div class="contact-box">
-                <div class="left" style= "background: url(assets/img/20231005_071118.jpg); background-size: cover;
-                height: 100%;" loading="lazy"></div>
-                <div class="right">
-                    <h2>Organic honey</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quis quibusdam sequi adipisci, sapiente voluptatum? Facilis doloremque hic culpa ipsam.</p> -->
-                    <!-- <input type="text" class="field" placeholder="Full Name">
-                    <input type="text" class="field" placeholder="Email address">
-                    <input type="text" class="field" placeholder="Phone">
-                    <textarea placeholder="Message" class="field"></textarea>
-                    <button class="btn">Send</button> -->
-                <!-- </div>
-            </div>
-        </div> -->
-
-            <!--==================== STEPS ====================-->
-            <section class="steps section container">
-                <!-- <div class="steps__bg">
-                    <h2 class="section__title-center steps__title">
-                        Steps to start your <br> beekeeping off right
-                    </h2>
-
-                    <div class="steps__container grid">
-                        <div class="steps__card">
-                            <div class="steps__card-number">01</div>
-                            <h3 class="steps__card-title">First, educate yourself</h3>
-                            <p class="steps__card-description">
-                                Do research on honey harvesting.
-                            </p>
-                        </div>
-
-                        <div class="steps__card">
-                            <div class="steps__card-number">02</div>
-                            <h3 class="steps__card-title">Gather your hive and equipment</h3>
-                            <p class="steps__card-description">
-                                It's not cheap to buy new hives and equipment, but use caution if you pick up used stuff. Clean it up well. 
-                            </p>
-                        </div>
-
-                        <div class="steps__card">
-                            <div class="steps__card-number">03</div>
-                            <h3 class="steps__card-title">Gather your hive and equipment</h3>
-                            <p class="steps__card-description">
-                                It's not cheap to buy new hives and equipment, but use caution if you pick up used stuff. Clean it up well.
-                            </p>
-                        </div>
-                    </div>
-                </div> -->
-            </section>
-
-            <!--==================== PRODUCTS ====================-->
-            <section class="product section container" id="shop" style= "background: url(assets/img/20230826_170635.jpg); background-position: center;
-            background-size: cover; border-radius: 16px;" loading="lazy">
-                <!-- <h2 class="section__title-center">
-                    Check out our <br> products
-                </h2>
-
-                <p class="product__description">
-                    Here are some selected honey from our farm, all are in excellent 
-                    condition and have a long life span. Buy and enjoy the best quality.
-                </p> -->
-
-
-                <div class="testimonials">
-                    <div class="inner">
-                        <h2 class="section__title-center" style="color: white;">Our shop</h2>
-                        
-                        <p style="color: black">Delivering the highest quality honey and honey products, while maintaining our commitment to wellbeing at the core of every aspect of our business.</p>
-                        <div class="row">
-                            <div class="col">
-                                <!-- <div class="testimonial">
-                                    <img src="assets/img/IMG-20230824-WA0008.jpg" alt="Beekeeping Product">
-                                    <h3> honey
-                                    </h3>
-                                    
-                                    <div class="name">The best honey in the market</div>
-                                    <button class="purchase-button">Purchase</button>
-                                </div> -->
-                            </div>
-    
-                            <div class="col">
-                                <!-- <div class="testimonial">
-                                    <img src="assets/img/IMG-20230824-WA0022.jpg" alt="Beekeeping Product">
-                                    <h3> honey
-                                    </h3>
-
-                                    <div class="name">The best honey in the market</div>
-                                    <button class="purchase-button">Purchase</button>
-                                </div> -->
-                            </div>
-    
-                            <div class="col">
-                                <!-- <div class="testimonial">
-
-                                    <img src="assets/img/IMG-20230729-WA0030.jpg" alt="Beekeeping Product">
-                                    <h3> honey
-                                    </h3>
-                                    
-                                    <div class="name">The best honey in the market</div>
-                                    <button class="purchase-button">Purchase</button>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <h2 class="section__title-center">
-                    Our Apiaries
-                </h2>
-                
-                <p class="product__description">
-                    1. Uasin Gishu County  - Sugoi and Kosachei <br>
-                    2. Narok County - Kilgoris <br>
-                    3. Taita Taveta County - Mata
-                </p>
-
-                <div class="gallery-wrap">
-                    <img src="assets/img/back.png" id="backBtn">
-                    <div class="gallery">
-                        <div>
-                            <span><img src="assets/img/20230825_120135.jpg" alt="" loading="lazy" class="about__img1"></span>
-                            <span><img src="assets/img/20230825_120206.jpg" alt="" loading="lazy" class="about__img1"></span>
-                        </div>
-                        <div>
-                            <span><img src="assets/img/20230825_120234.jpg" alt="" loading="lazy" class="about__img1"></span>
-                            <span><img src="assets/img/20230825_120426.jpg" alt="" loading="lazy" class="about__img1"></span>
-                            <span><img src="assets/img/20230825_120451.jpg" alt="" loading="lazy" class="about__img1"></span>
-                            <span><img src="assets/img/20230825_131621.jpg" alt="" loading="lazy" class="about__img1"></span>
-                            <span><img src="assets/img/20230825_131625.jpg" alt="" loading="lazy" class="about__img1"></span>
-                            <span><img src="assets/img/20230825_131630.jpg" alt="" loading="lazy" class="about__img1"></span>
-                        </div>
-                    </div>
-                    <img src="assets/img/next.png" id="nextBtn">
-                </div> -->
-                
-                <!-- <h3 class="product__title">Kosachei</h3> -->
-                
-                <!-- <h3 class="product__title">Taveta</h3> -->
-                <!-- <h2 class="section__title-center">
-                    Our fresh organic honey
-                </h2>
-                
-
-                <p class="product__description">
-                    Due to the different regions where the apiaries are 
-                    situated,  we have a wide range of colours, sweetness, flavours and thickness of honey. All there 
-                    characteristics are determined by the vegetation surrounding the bees
-                </p>
-
-                <div class="gallery-wrap">
-                    <img src="assets/img/back.png" id="backbtn">
-                    <div class="gallery1">
-                        <div>
-                            
-                            <span><img src="assets/img/WhatsApp Image 2023-09-19 at 10.09.53 AM.jpeg" alt="" loading="lazy" class="about__img1"></span>
-                            <span><img src="assets/img/WhatsApp Image 2023-09-19 at 10.15.46 AM.jpeg" alt="" loading="lazy" class="about__img1"></span>
-                            <span><img src="assets/img/IMG-20230729-WA0030.jpg" alt="" loading="lazy" class="about__img1"></span>
-                        </div>
-                        <div>
-                            <span><img src="assets/img/IMG-20230705-WA0039.jpg" alt="" loading="lazy" class="about__img1"></span>
-                        </div>
-                    </div>
-                    <img src="assets/img/next.png" id="nextbtn">
-                </div>
-
-                
-
-                <h2 class="section__title-center">
-                    Our workshop
-                </h2>
-
-                <p class="product__description">
-                    Fitted with the latest and modern equipment,  we design and manufacture the 
-                    best hives made from original wood. No clipboards and plywood hence durability is guaranteed.
-                </p>
-   
-                <video width="320" height="240" controls>
-                    <source src="assets/img/WhatsApp Video 2023-09-19 at 10.15.45 AM.mp4" loading="lazy" type="video/mp4">
-                </video>
-
-                <video width="320" height="240" controls>
-                    <source src="assets/img/WhatsApp Video 2023-09-19 at 10.22.46 AM.mp4" loading="lazy" type="video/mp4">
-                </video>
-
-                
-
-                <div class="product__container grid">
-                    <article class="product__card">
-                        <div class="product__circle"></div>
-
-                        <img src="assets/img/IMG-20230729-WA0030.jpg" alt="" loading="lazy" class="product__img"> -->
-
-                        <!-- <h3 class="product__title">honey</h3>
-                        <span class="product__price">ksh200</span> -->
-
-                        <!-- <button class="button--flex product__button">
-                            <i class="ri-shopping-bag-line"></i>
-                        </button> -->
-                    <!-- </article> -->
-
-                    <!-- <article class="product__card">
-                        <div class="product__circle"></div>
-
-                        <img src="assets/img/IMG-20230725-WA0037.jpg" alt="" loading="lazy" class="product__img"> -->
-
-                        <!-- <h3 class="product__title">honey</h3>
-                        <span class="product__price">ksh200</span> -->
-
-                        <!-- <button class="button--flex product__button">
-                            <i class="ri-shopping-bag-line"></i>
-                        </button> -->
-                    <!-- </article> -->
-
-                    <!-- <article class="product__card">
-                        <div class="product__circle"></div>
-
-                        <img src="assets/img/IMG-20230729-WA0026.jpg" alt="" loading="lazy" class="product__img"> -->
-
-                        
-
-                        <!-- <button class="button--flex product__button">
-                            <i class="ri-shopping-bag-line"></i>
-                        </button> -->
-                    <!-- </article>
-
-                    <article class="product__card">
-                        <div class="product__circle"></div>
-
-                        <img src="assets/img/20230828_080021.jpg" alt="" loading="lazy" class="product__img"> -->
-
-                        <!-- <h3 class="product__title">honey</h3>
-                        <span class="product__price">ksh200</span> -->
-
-                        <!-- <button class="button--flex product__button">
-                            <i class="ri-shopping-bag-line"></i>
-                        </button> -->
-                    <!-- </article> -->
-
-                    <!-- <article class="product__card">
-                        <div class="product__circle"></div> -->
-
-                        <!-- <img src="assets/img/20230828_080021.jpg" alt="" loading="lazy" class="product__img"> -->
-
-                        <!-- <h3 class="product__title">honey</h3>
-                        <span class="product__price">ksh200</span> -->
-
-                        <!-- <button class="button--flex product__button">
-                            <i class="ri-shopping-bag-line"></i>
-                        </button> -->
-                    <!-- </article> -->
-
-                    <!-- <article class="product__card">
-                        <div class="product__circle"></div> -->
-
-                        <!-- <img src="assets/img/IMG-20230822-WA0021.jpg" alt="" loading="lazy" class="product__img"> -->
-
-                        <!-- <h3 class="product__title">honey</h3>
-                        <span class="product__price">ksh200</span> -->
-
-                        <!-- <button class="button--flex product__button">HI
-                            <i class="ri-shopping-bag-line"></i>
-                        </button> -->
-                    <!-- </article>
-                </div> -->
-            </section>
-
-            <!--==================== QUESTIONS ====================-->
-            <section class="questions section" id="faqs" style= "background: url(assets/img/20230821_164922.jpg); background-position: center;
-            background-size: cover; margin-top: 5rem;" loading="lazy">
-                <h2 class="section__title-center questions__title container" style="color: white;">
-                    Some common questions <br> we're often asked
-                </h2>
-
-                <div class="questions__container container grid">
-                    <div class="questions__group">
-                        <div class="questions__item">
-                            <header class="questions__header">
-                                <i class="ri-add-line questions__icon"></i>
-                                <h3 class="questions__item-title">
-                                    How do I feed the bees?
-                                </h3>
-                            </header>
-
-                            <div class="questions__content">
-                                <p class="questions__description">
-                                    Our bees forage on natural vegetation found around the apiaries , but we also plant flowering crops like sunflower, canola,  beans, peas, spider plant etc. We also have flower gardens around the apiaries with good quality nectar and pollen.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="questions__item">
-                            <header class="questions__header">
-                                <i class="ri-add-line questions__icon"></i>
-                                <h3 class="questions__item-title">
-                                    What equipment do I need to start beekeeping?
-                                </h3>
-                            </header>
-
-                            <div class="questions__content">
-                                <p class="questions__description">
-                                    The minimun should be a smoker, hive tool and protective
-                                    clothing.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="questions__item">
-                            <header class="questions__header">
-                                <i class="ri-add-line questions__icon"></i>
-                                <h3 class="questions__item-title">
-                                    Where do I get my beekeeping equipment from?
-                                </h3>
-                            </header>
-
-                            <div class="questions__content">
-                                <p class="questions__description">
-                                    Many BKAs sell equipment, or the essentials like frames and 
-                                    foundation. Support them if you can, as it is part of the 
-                                    service offered and the quicker the turnover, the better it is for everyone.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="questions__group">
-                        <div class="questions__item">
-                            <header class="questions__header">
-                                <i class="ri-add-line questions__icon"></i>
-                                <h3 class="questions__item-title">
-                                    How much spare equipment should I have?
-                                </h3>
-                            </header>
-
-                            <div class="questions__content">
-                                <p class="questions__description">
-                                    If you have a ready source locally, then don't bother too much about it. 
-                                    In your early stages it makes sense to have a spare floor, brood box and 
-                                    at least enough frames to fill it.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="questions__item">
-                            <header class="questions__header">
-                                <i class="ri-add-line questions__icon"></i>
-                                <h3 class="questions__item-title">
-                                    Can I keep bees in my garden?
-                                </h3>
-                            </header>
-
-                            <div class="questions__content">
-                                <p class="questions__description">
-                                    Yes, there is no legislation to stop you. You should make sure there is 
-                                    room to keep at least 3 colonies, as during the summer months there may be 
-                                    times when you will temporarily increase your colony numbers for management purposes.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="questions__item">
-                            <header class="questions__header">
-                                <i class="ri-add-line questions__icon"></i>
-                                <h3 class="questions__item-title">
-                                    How many hives can I keep in one place?
-                                </h3>
-                            </header>
-
-                            <div class="questions__content">
-                                <p class="questions__description">
-                                    This depends on many things, but all areas will usually support a small number of colonies, 
-                                    so there should be no problem for a beginner.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="questions section" id="faqs" style= "background: url(assets/img/20230825_131625.jpg); background-position: center;
-            background-size: cover; margin-top: 5rem;" loading="lazy">
-            <h2 class="section__title-center">Our Team</h2>
-            <p class="product__description" style="color: white;">Meet the team behind our magical product</p>
-            <div class="members">
-                <div class="team-mem">
-                    <img src="assets/img/WhatsApp Image 2024-01-19 at 2.10.10 PM.jpeg" class="team">
-                    <h3>Mr. Kelly</h3>
-                    <p class="product__description1" style="color: white;">Beekeper</p>
-                </div>
-                <div class="team-mem">
-                    <img src="assets/img/pexels-andrea-piacquadio-3785079.jpg" class="team">
-                    <h3>Mr. Jeremy</h3>
-                    <p class="product__description1" style="color: white;">Beekeper</p>
-                </div>
-                <div class="team-mem">
-                    <img src="assets/img/pexels-andrea-piacquadio-3785079.jpg" class="team">
-                    <h3>Mr. Jeremy</h3>
-                    <p class="product__description1" style="color: white;">Beekeper</p>
-                </div>
-                <div class="team-mem">
-                    <img src="assets/img/pexels-andrea-piacquadio-3785079.jpg" class="team">
-                    <h3>Mr. Jeremy</h3>
-                    <p class="product__description1" style="color: white;">Beekeper</p>
-                </div>
-            </div>
-            </section>
-            <!--==================== CONTACT ====================-->
-            <section class="contact section container" id="contact">                
-                <!-- <div class="contact__container grid"> -->
-                    <!-- <div class="contact__box">
-                        <h2 class="section__title">
-                            Reach out to us today <br> via any of the given <br> information
-                        </h2>
-
-                        <div class="contact__data">
-                            <div class="contact__information">
-                                <h3 class="contact__subtitle">Call us for instant support</h3>
-                                <span class="contact__description">
-                                    <i class="ri-phone-line contact__icon"></i>
-                                    +254708374554
-                                </span>
-                            </div>
-
-                            <div class="contact__information">
-                                <h3 class="contact__subtitle">Write us by mail</h3>
-                                <span class="contact__description">
-                                    <i class="ri-mail-line contact__icon"></i>
-                                    honeyliciouskenya@gmail.com
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
+
+	<!-- title -->
+	<title>honeylicious</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="assets/img/HONEYL1 (1).png">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<!-- owl carousel -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<!-- magnific popup -->
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<!-- animate css -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<!-- mean menu css -->
+	<link rel="stylesheet" href="assets/css/meanmenu.min.css">
+	<!-- main style -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+<body>
+	
+	<!--PreLoader-->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <!--PreLoader Ends-->
+	
+	<!-- header -->
+	<div class="top-header-area" id="sticker">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 text-center">
+					<div class="main-menu-wrap">
+						<!-- logo -->
+						<div class="site-logo">
+							<a href="index.html">
+								<img src="assets/img/HONEYL1 (1).png" alt="">
+							</a>
+						</div>
+						<!-- logo -->
+
+						<!-- menu start -->
+						<nav class="main-menu">
+							<ul>
+								<li class="current-list-item"><a href="#">Home</a>
+									<ul class="sub-menu">
+										<li><a href="index.html">Home</a></li>
+										<li><a href="index_2.html">Gallery</a></li>
+									</ul>
+								</li>
+								<li><a href="about.html">About</a></li>
+								<!-- <li><a href="#">Pages</a>
+									<ul class="sub-menu">
+										<li><a href="404.html">404 page</a></li>
+										<li><a href="about.html">About</a></li>
+										<li><a href="cart.html">Cart</a></li>
+										<li><a href="checkout.html">Check Out</a></li>
+										<li><a href="contact.html">Contact</a></li>
+										<li><a href="news.html">News</a></li>
+										<li><a href="shop.html">Shop</a></li>
+									</ul>
+								</li> -->
+								<li><a href="news.html">FAQ</a>
+									<!-- <ul class="sub-menu">
+										<li><a href="news.html">News</a></li>
+										<li><a href="single-news.html">Single News</a></li>
+									</ul> -->
+								</li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="shop.html">Shop</a>
+									<ul class="sub-menu">
+										<li><a href="shop.html">Shop</a></li>
+										<li><a href="checkout.html">Check Out</a></li>
+										<li><a href="single-product.html">Single Product</a></li>
+										<li><a href="cart.html">Cart</a></li>
+									</ul>
+								</li>
+								<li>
+									<div class="header-icons">
+										<a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+										<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+									</div>
+								</li>
+							</ul>
+						</nav>
+						<a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+						<div class="mobile-menu"></div>
+						<!-- menu end -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+	
+	<!-- search area -->
+	<div class="search-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<span class="close-btn"><i class="fas fa-window-close"></i></span>
+					<div class="search-bar">
+						<div class="search-bar-tablecell">
+							<h3>Search For:</h3>
+							<input type="text" placeholder="Keywords">
+							<button type="submit">Search <i class="fas fa-search"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end search area -->
+
+	<!-- hero area -->
+	<div class="hero-area hero-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9 offset-lg-2 text-center">
+					<div class="hero-text">
+						<div class="hero-text-tablecell">
+							<p class="subtitle">Fresh & Organic Honey</p>
+							<h1>Delicious Honey</h1>
+							<div class="hero-btns">
+								<a href="shop.html" class="boxed-btn">Shop</a>
+								<a href="contact.html" class="bordered-btn">Contact Us</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end hero area -->
+
+	<!-- features list section -->
+	<!-- <div class="list-section pt-80 pb-80">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+					<div class="list-box d-flex align-items-center">
+						<div class="list-icon">
+							<i class="fas fa-shipping-fast"></i>
+						</div>
+						<div class="content">
+							<h3>Free Shipping</h3>
+							<p>When order over $75</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+					<div class="list-box d-flex align-items-center">
+						<div class="list-icon">
+							<i class="fas fa-phone-volume"></i>
+						</div>
+						<div class="content">
+							<h3>24/7 Support</h3>
+							<p>Get support all day</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="list-box d-flex justify-content-start align-items-center">
+						<div class="list-icon">
+							<i class="fas fa-sync"></i>
+						</div>
+						<div class="content">
+							<h3>Refund</h3>
+							<p>Get refund within 3 days!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div> -->
+	<!-- end features list section -->
+
+	<!-- product section -->
+	<!-- <div class="product-section mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="section-title">	
+						<h3><span class="orange-text">Our</span> Products</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae optio.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6 text-center">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img src="assets/img/products/product-img-1.jpg" alt=""></a>
+						</div>
+						<h3 class="product-name">Strawberry</h3>
+						<p class="product-price"><span>Per Kg</span> 85$ </p>
+						<a href="single-product.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Purchase</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img src="assets/img/products/product-img-2.jpg" alt=""></a>
+						</div>
+						<h3>Berry</h3>
+						<p class="product-price"><span>Per Kg</span> 70$ </p>
+						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img src="assets/img/products/product-img-3.jpg" alt=""></a>
+						</div>
+						<h3>Lemon</h3>
+						<p class="product-price"><span>Per Kg</span> 35$ </p>
+						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!-- end product section -->
+
+	<!-- cart banner section -->
+	<!-- <section class="cart-banner pt-100 pb-100">
+    	<div class="container">
+        	<div class="row clearfix"> -->
+            	<!--Image Column-->
+            	<!-- <div class="image-column col-lg-6">
+                	<div class="image">
+                    	<div class="price-box">
+                        	<div class="inner-price">
+                                <span class="price">
+                                    <strong>30%</strong> <br> off per kg
                                 </span>
                             </div>
                         </div>
-                    </div> -->
-
-                    <!-- <img src="assets/img/20231005_062102.jpg" alt="" loading="lazy" class="home__img">
- 
-
-                    <form action="" id="contact-form" class="contact__form">
-                        <div class="contact__inputs">
-                            <div class="contact__content">
-                                <input type="email" id="email" placeholder=" " class="contact__input">
-                                <label for="" class="contact__label">Email</label>
-                            </div>
-
-                            <div class="contact__content">
-                                <input type="text" id="text" placeholder=" " class="contact__input">
-                                <label for="" class="contact__label">Subject</label>
-                            </div>
-
-                            <div class="contact__content contact__area">
-                                <textarea name="message" id="message" placeholder=" " class="contact__input"></textarea>                              
-                                <label for="" class="contact__label">Message</label>
-                            </div>
-                        </div>
-
-                        <button type="submit" value="send" id="button" class="button button--flex">
-                            Send Message
-                            <i class="ri-arrow-right-up-line button__icon"></i>
-                        </button>
-                    </form>
-                </div> -->
-                <form action="">
-                <span>LEAVE A MESSAGE</span>
-                <h2>We love to hear from you</h2>
-                <input type="text" placeholder="Your Name">
-                <input type="text" placeholder="E-mail">
-                <input type="text" placeholder="Subject">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <button class="normal">Submit</button>
-                </form>
-
-                <!-- <div class="container1">
-                    <div class="contact-box">
-                        <div class="left" style= "background: url(assets/img/20231005_071118.jpg); background-size: cover;
-                        height: 100%;"></div>
-                        <div class="right">
-                            <h2>Contact Us</h2>
-                            <input type="email" class="field" placeholder="email" id="email">
-                            <input type="text" class="field" placeholder="text" id="text">
-                            <input type="text" class="field" placeholder="Phone">
-                            <textarea placeholder="Message" class="field" id="message"></textarea>
-                            <button class="btn" id="button">Send</button>
-                        </div>
+                    	<img src="assets/img/a.jpg" alt="">
                     </div>
                 </div> -->
-
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer section" style= "background: url(assets/img/20230712_171335.jpg); background-position: center;
-        background-size: cover; margin-top: 5rem;">
-            <div class="footer__container container grid">
-                <div class="footer__content">
-                    <a href="#" class="footer__logo">
-                        <img src="assets/img/HONEYL1.png" loading="lazy" alt="">  
-                    </a>
-
-                    
+                <!--Content Column-->
+                <!-- <div class="content-column col-lg-6">
+					<h3><span class="orange-text">Deal</span> of the month</h3>
+                    <h4>Hikan Strwaberry</h4>
+                    <div class="text">Quisquam minus maiores repudiandae nobis, minima saepe id, fugit ullam similique! Beatae, minima quisquam molestias facere ea. Perspiciatis unde omnis iste natus error sit voluptatem accusant</div> -->
+                    <!--Countdown Timer-->
+                    <!-- <div class="time-counter"><div class="time-countdown clearfix" data-countdown="2020/2/01"><div class="counter-column"><div class="inner"><span class="count">00</span>Days</div></div> <div class="counter-column"><div class="inner"><span class="count">00</span>Hours</div></div>  <div class="counter-column"><div class="inner"><span class="count">00</span>Mins</div></div>  <div class="counter-column"><div class="inner"><span class="count">00</span>Secs</div></div></div></div>
+                	<a href="cart.html" class="cart-btn mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
                 </div>
-
-                <div class="footer__content">
-                    <h3 class="footer__title">Our Address</h3>
-
-                    <ul class="footer__data">
-                        <li class="footer__information" style="color: white;">Nairobi</li>
-                        <li class="footer__information" style="color: white;">62000</li>
-                        <li class="footer__information" style="color: white;">00200</li>
-                    </ul>
-                </div>
-
-                <div class="footer__content">
-                    <h3 class="footer__title">Contact Us</h3>
-
-                    <ul class="footer__data">
-                        <li class="footer__information" style="color: white;">+254708374554</li>
-                        
-                        <h3 class="footer__title">Follow us</h3>
-                        <div class="footer__social">
-                            <a href="https://www.facebook.com/" class="footer__social-link" >
-                                <i class="ri-facebook-fill" style="color: white;"></i>
-                            </a>
-                            <a href="https://www.instagram.com/" class="footer__social-link" >
-                                <i class="ri-instagram-line" style="color: white;"></i>
-                            </a>
-                            <a href="https://twitter.com/" class="footer__social-link" >
-                                <i class="ri-twitter-fill" style="color: white;"></i>
-                            </a>
-                        </div>
-                    </ul>
-                </div>
-
-                
             </div>
+        </div>
+    </section> -->
+    <!-- end cart banner section -->
 
-            <p class="footer__copy" style="color: white;">&#169; Honeylicious. All rights reserved</p>
-            <p>J. Mokiei</p>
-        </footer>
-        
-        <!--=============== SCROLL UP ===============-->
-        <a href="#" class="scrollup" id="scroll-up"> 
-            <i class="ri-arrow-up-fill scrollup__icon"></i>
-        </a>
+	<!-- testimonail-section -->
+	<!-- <div class="testimonail-section mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1 text-center">
+					<div class="testimonial-sliders">
+						<div class="single-testimonial-slider">
+							<div class="client-avater">
+								<img src="assets/img/avaters/avatar1.png" alt="">
+							</div>
+							<div class="client-meta">
+								<h3>Saira Hakim <span>Local shop owner</span></h3>
+								<p class="testimonial-body">
+									" Sed ut perspiciatis unde omnis iste natus error veritatis et  quasi architecto beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium "
+								</p>
+								<div class="last-icon">
+									<i class="fas fa-quote-right"></i>
+								</div>
+							</div>
+						</div>
+						<div class="single-testimonial-slider">
+							<div class="client-avater">
+								<img src="assets/img/avaters/avatar2.png" alt="">
+							</div>
+							<div class="client-meta">
+								<h3>David Niph <span>Local shop owner</span></h3>
+								<p class="testimonial-body">
+									" Sed ut perspiciatis unde omnis iste natus error veritatis et  quasi architecto beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium "
+								</p>
+								<div class="last-icon">
+									<i class="fas fa-quote-right"></i>
+								</div>
+							</div>
+						</div>
+						<div class="single-testimonial-slider">
+							<div class="client-avater">
+								<img src="assets/img/avaters/avatar3.png" alt="">
+							</div>
+							<div class="client-meta">
+								<h3>Jacob Sikim <span>Local shop owner</span></h3>
+								<p class="testimonial-body">
+									" Sed ut perspiciatis unde omnis iste natus error veritatis et  quasi architecto beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium "
+								</p>
+								<div class="last-icon">
+									<i class="fas fa-quote-right"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!-- end testimonail-section -->
+	
+	<!-- advertisement section -->
+	<div class="abt-section mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<div class="abt-bg">
+						<a href="https://www.youtube.com/watch?v=DBLlFWYcIGQ" class="video-play-btn popup-youtube"><i class="fas fa-play"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-12">
+					<div class="abt-text">
+						<p class="top-sub">Since Year 2020</p>
+						<h2>We are <span class="orange-text">Honeylicious</span></h2>
+						<p>Etiam vulputate ut augue vel sodales. In sollicitudin neque et massa porttitor vestibulum ac vel nisi. Vestibulum placerat eget dolor sit amet posuere. In ut dolor aliquet, aliquet sapien sed, interdum velit. Nam eu molestie lorem.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis illo repellat veritatis minus, et labore minima mollitia qui ducimus.</p>
+						<a href="about.html" class="boxed-btn mt-4">know more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end advertisement section -->
+	
+	<!-- shop banner -->
+	<!-- <section class="shop-banner">
+    	<div class="container">
+        	<h3>December sale is on! <br> with big <span class="orange-text">Discount...</span></h3>
+            <div class="sale-percent"><span>Sale! <br> Upto</span>50% <span>off</span></div>
+            <a href="shop.html" class="cart-btn btn-lg">Shop Now</a>
+        </div>
+    </section> -->
+	<!-- end shop banner -->
 
-        <!--=============== SCROLL REVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
-        
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
+	<!-- latest news -->
+	<!-- <div class="latest-news pt-150 pb-150">
+		<div class="container">
 
-        <!--=============== EMAIL JS ===============-->
-        
-            
-<script type="text/javascript">
-//    document.getElementById("contact-form")
-//             e.preventDefault();
-// window.onload = function() {
-//         document.getElementById('#contact-form').addEventListener('submit', function(event) {
-//             event.preventDefault();
-//         })
-//     }
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="section-title">	
+						<h3><span class="orange-text">Our</span> News</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae optio.</p>
+					</div>
+				</div>
+			</div>
 
-          
-        // const publicKey = "qYJL2jABzvMOFtdpJ";
-            
-        //     emailjs.init(publicKey); // Account Public Key  
-            
-        
-        // var serviceID = "service_7ent9xd" // Email service ID
-        // var templateID = "template_6u0lpg5" //Email template ID
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="single-latest-news">
+						<a href="single-news.html"><div class="latest-news-bg news-bg-1"></div></a>
+						<div class="news-text-box">
+							<h3><a href="single-news.html">You will vainly look for fruit on it in autumn.</a></h3>
+							<p class="blog-meta">
+								<span class="author"><i class="fas fa-user"></i> Admin</span>
+								<span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
+							</p>
+							<p class="excerpt">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.</p>
+							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-latest-news">
+						<a href="single-news.html"><div class="latest-news-bg news-bg-2"></div></a>
+						<div class="news-text-box">
+							<h3><a href="single-news.html">A man's worth has its season, like tomato.</a></h3>
+							<p class="blog-meta">
+								<span class="author"><i class="fas fa-user"></i> Admin</span>
+								<span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
+							</p>
+							<p class="excerpt">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.</p>
+							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+					<div class="single-latest-news">
+						<a href="single-news.html"><div class="latest-news-bg news-bg-3"></div></a>
+						<div class="news-text-box">
+							<h3><a href="single-news.html">Good thoughts bear good fresh juicy fruit.</a></h3>
+							<p class="blog-meta">
+								<span class="author"><i class="fas fa-user"></i> Admin</span>
+								<span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
+							</p>
+							<p class="excerpt">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.</p>
+							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<a href="news.html" class="boxed-btn">More News</a>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!-- end latest news -->
 
-        // var params = {
-        //     senderemail: document.querySelector("#email").value,
-        //     subject: document.querySelector("#text").value,
-        //     message: document.querySelector("#message").value
-        // };
-        
-        
+	<!-- logo carousel -->
+	<div class="logo-carousel-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="logo-carousel-inner">
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/1.png" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/2.png" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/3.png" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/4.png" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/5.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end logo carousel -->
 
-        // emailjs.send(serviceID, templateID, params)
-        // .then( res => {
-        //     alert('Thank you, ' + params['senderemail'] + '! Your message has been sent.')
-        // })
-        // .catch();
+	<!-- footer -->
+	<div class="footer-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box about-widget">
+						<h2 class="widget-title">About us</h2>
+						<p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box get-in-touch">
+						<h2 class="widget-title">Get in Touch</h2>
+						<ul>
+							<li>Kenya, Nairobi</li>
+							<li>honeyliciouskenya@gmail.com</li>
+							<li>+254708374554</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box pages">
+						<h2 class="widget-title">Pages</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="shop.html">Shop</a></li>
+							<li><a href="news.html">FAQ</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- <div class="col-lg-3 col-md-6">
+					<div class="footer-box subscribe">
+						<h2 class="widget-title">Subscribe</h2>
+						<p>Subscribe to our mailing list to get the latest updates.</p>
+						<form action="index.html">
+							<input type="email" placeholder="Email">
+							<button type="submit"><i class="fas fa-paper-plane"></i></button>
+						</form>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<!-- end footer -->
+	
+	<!-- copyright -->
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<p>Copyrights &copy; 2024 - All Rights Reserved.<br>
+					</p>
+				</div>
+				<div class="col-lg-6 text-right col-md-12">
+					<div class="social-icons">
+						<ul>
+							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end copyright -->
+	
+	<!-- jquery -->
+	<script src="assets/js/jquery-1.11.3.min.js"></script>
+	<!-- bootstrap -->
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- count down -->
+	<script src="assets/js/jquery.countdown.js"></script>
+	<!-- isotope -->
+	<script src="assets/js/jquery.isotope-3.0.6.min.js"></script>
+	<!-- waypoints -->
+	<script src="assets/js/waypoints.js"></script>
+	<!-- owl carousel -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- magnific popup -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- mean menu -->
+	<script src="assets/js/jquery.meanmenu.min.js"></script>
+	<!-- sticker js -->
+	<script src="assets/js/sticker.js"></script>
+	<!-- main js -->
+	<script src="assets/js/main.js" async></script>
 
-     const contactForm = document.querySelector("#contact-form")
-     const submitBtn = document.querySelector("#button")
-     const emailInput = document.querySelector("#email").value
-     const subjectInput = document.querySelector("#text").value
-     const messageInput = document.querySelector("#message").value
-
- // Get nedded data from email JS
-    const publicKey = "qYJL2jABzvMOFtdpJ";
-    const serviceId = "service_7ent9xd";
-    const templateId = "template_6u0lpg5";
-
-  // Initialize email JS with public key
-  emailjs.init(publicKey);
-
-  // Add submit event to the form
-//   contactForm.addEventListener("submit"), e => {
-    //   Prevent form default behaviour
-    // e.preventDefault();
-
-  
-
-
-    
-    // Change button text
-    // submitBtn.innerText = "Just A Moment...";
-
-    // Get all input field values
-    const inputFields = {
-        email: document.querySelector("#email").value,
-        subject: document.querySelector("#text").value,
-        message: document.querySelector("#message").value
-    };
-
-    /* Send the the email
-  (Add service, template ID and input field values)*/
-  emailjs.send(serviceId, templateId, inputFields)
-  .then(() => {
-
-    // alert('Thank you' + '! Your message has been sent.');
-    // Change button text
-    // submitBtn.innertext = "message sent";
-
-    // Clear out all input fields
-    // emailInput.value = "";
-    // textInput.value = "";
-    // messageInput.value = "";
-    }, (error) => {
-
-    // Console log error
-    console.log(error)
-
-    // Change button text
-    // submitBtn.innerText = "Something went wrong";
-  });
- 
-// HORIZONTAL SCROLL IMAGE GALLERY
-
-// let scrollContainers = document.queryselector("#products")
-
-let scrollContainer = document.querySelector(".gallery")
-let backBtn = document.getElementById("backBtn")
-let nextBtn = document.getElementById("nextBtn")
-
-scrollContainer.addEventListener("wheel", (evt) => {
-    evt.preventDefault();
-    scrollContainer.scrollLeft += evt.deltaY;
-    scrollContainer.style.scrollBehavior = "auto"
-})
-
-nextBtn.addEventListener("click", () => {
-   scrollContainer.style.scrollBehavior = "smooth";
-   scrollContainer.scrollLeft += 900;
-});
-
-backBtn.addEventListener("click", () => {
-   scrollContainer.style.scrollBehavior = "smooth";
-   scrollContainer.scrollLeft -= 900;
-});
-
-let scrollContainers = document.querySelector(".gallery1")
-let backBtns = document.getElementById("backbtn")
-let nextBtns = document.getElementById("nextbtn")
-
-scrollContainers.addEventListener("wheel", (evt) => {
-    evt.preventDefault();
-    scrollContainers.scrollLeft += evt.deltaY;
-    scrollContainers.style.scrollBehavior = "auto"
-})
-
-nextBtns.addEventListener("click", () => {
-   scrollContainers.style.scrollBehavior = "smooth";
-   scrollContainers.scrollLeft += 900;
-});
-
-backBtns.addEventListener("click", () => {
-   scrollContainers.style.scrollBehavior = "smooth";
-   scrollContainers.scrollLeft -= 900;
-});
-
-
-        
-</script>
-
-        
-    </body>
+</body>
 </html>
